@@ -1,26 +1,58 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
 
-    <!-- Defines an Image -->
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
 
-    <!-- Defines a client-side image map -->
+<body>
 
-    <!-- Defines an area inside an image map -->
+  <!-- <img> - Defines an Image -->
+  <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo"
+    usemap="#mymap">
 
-    <!-- Used to draw graphics, on the fly, via scripting (JavaScript)-->
+  <!-- <map> - Defines a client-side image map -->
+  <map name="mymap">
+    <area shape="circle" coords="30,40,270,350"
+      href="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="">
 
-    <!-- Defines a caption for a <figure> element -->
+  </map>
 
-    <!-- Specifies self-contained content -->
+  <!-- <area> - Defines an area inside an image map -->
+  <area shape="default" coords="" href="" alt="">
 
-    <!-- Defines a container for multiple image resources -->
+  <!-- <canvas> - Used to draw graphics, on the fly, via scripting (JavaScript)-->
+  <canvas>
 
-    <!-- Defines a container for SVG graphics -->
+  </canvas>
 
-  </body>
+  <!-- <figcaption> - Defines a caption for a <figure> element -->
+  <figcaption>
+
+  </figcaption>
+
+  <!-- <figure> - Specifies self-contained content -->
+  <figure>
+    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo"
+      usemap="#mymap">
+    <figcaption>
+      this is a figcaption
+    </figcaption>
+  </figure>
+
+  <!-- <<picture> - Defines a container for multiple image resources -->
+  <!--Maybe better to use css to make reponsive images.-->
+  <picture>
+
+  </picture>
+
+  <!-- <svg> - Defines a container for SVG graphics -->
+  <svg>
+    <circle cx="50" cy="50" r="40" />
+    <circle cx="150" cy="50" r="4" />
+  </svg>
+
+</body>
+
 </html>
