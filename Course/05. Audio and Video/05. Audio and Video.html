@@ -1,18 +1,39 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
 
-    <!-- Defines sound content -->
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
 
-    <!-- Defines multiple media resources for media elements (<video>, <audio> and <picture>) -->
+<body>
+  <div>
+    <a href="https://www.w3schools.com/tags/default.asp">w3schools html reference</a>
+    <br>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">mozilla html reference</a>
+    <hr>
+  </div>
 
-    <!-- Defines text tracks for media elements (<video> and <audio>) -->
 
-    <!-- Defines a video or movie-->
+  <!-- <audio> - Defines sound content -->
+  <audio src="https://www.w3schools.com/tags/horse.ogg" controls autoplay loop muted></audio>
 
-  </body>
+  <!-- Defines multiple media resources for media elements (<video>, <audio> and <picture>) -->
+  <hr>
+  <audio controls autoplay loop muted>
+    <source src="https://www.w3schools.com/tags/horse.ogg" type="audio/ogg">
+  </audio>
+
+  <!-- Defines text tracks for media elements (<video> and <audio>) -->
+  <hr>
+  <track src="" kind="subtitle" srclang="en" label="">
+
+  <!-- Defines a video or movie-->
+  <hr>
+  <video src="https://www.w3schools.com/tags/movie.mp4" autoplay poster="posterimage.jpg" controls loop muted>
+
+  </video>
+
+</body>
+
 </html>
