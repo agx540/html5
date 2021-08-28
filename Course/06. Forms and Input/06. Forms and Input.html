@@ -69,7 +69,6 @@
   <!-- <fieldset> - Groups related elements in a form -->
   <hr>
   <form action="">
-    <p>fieldset</p>
     <fieldset>
       <select name="" id="">
         <option value="1">1</option>
@@ -83,13 +82,53 @@
   </form>
 
   <!-- <legend> - Defines a caption for a <fieldset> element -->
-  <legend>
+  <hr>
+  <form action="">
+    <fieldset>
+      <legend>legend for fieldset</legend>
+      <select name="" id="">
+        <option value="1">1</option>
+        <option value="2">2</option>
+      </select>
+      <br>
+      <input type="text" name="" id="">
+      <br>
+      <input type="number" name="" id="">
+    </fieldset>
+    <fieldset>
+      <legend>legend for fieldset 2</legend>
+      <select name="" id="">
+        <option value="1">1</option>
+        <option value="2">2</option>
+      </select>
+      <br>
+      <input type="text" name="" id="">
+      <br>
+      <input type="number" name="" id="">
+    </fieldset>
+  </form>
 
-  </legend>
+  <!-- <datalist> - Specifies a list of pre-defined options for input controls -->
+  <hr>
+  <label for="ice-cream-choice">Choose a flavor:</label>
+  <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
 
-  <!-- Specifies a list of pre-defined options for input controls -->
+  <datalist id="ice-cream-flavors">
+    <option value="Chocolate">
+    <option value="Coconut">
+    <option value="Mint">
+    <option value="Strawberry">
+    <option value="Vanilla">
+  </datalist>
 
-  <!-- Defines the result of a calculation -->
+  <!-- <output> - Defines the result of a calculation -->
+  <form oninput="x.value = parseInt(a.value) + parseInt(b.value)">
+    <input type="range" name="" id="a" value="50">
+    +
+    <input type="number" name="" id="b" value="25">
+    =
+    <output name="x" for="a b"></output>
+  </form>
 
 
 </body>
