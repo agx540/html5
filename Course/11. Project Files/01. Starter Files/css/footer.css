@@ -1,0 +1,31 @@
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--lightgray);
+  color: var(--white);
+  text-align: center;
+}
+
+.footer a {
+  float: left;
+  display: block;
+  color: var(--white);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.footer a:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+/* Add an active class to highlight the current page */
+.footer a.active {
+  background-color: var(--green);
+  color: var(--white);
+}
